@@ -674,7 +674,36 @@ class: "flex flex-col items-center justify-center"
 - Supporté par <logos-safari /> derrière un flag
 - Support dans v8 derrière un flag, pas encore dans <logos-nodejs-icon-alt /> stable
 - Polyfill officiel : `@js-temporal/polyfill`
-- **Utilisez le sur votre prochain projet !**
+
+---
+class: "flex flex-col items-center justify-center [&_pre]:!text-xl"
+---
+
+# En conclusion
+
+<br />
+
+<v-clicks>
+
+- **Utilisez le sur votre prochain projet ou dès maintenant !**
+- Plus vraiment de raison d'utiliser `Date` ou des libs tierces
+- `Intl.DateTimeFormat` et `Intl.DurationFormat` <br />sont utilisées par Temporal sous le capot
+- `<time />` en HTML pour la sémantique, l'a11y, et le SEO
+
+</v-clicks>
+
+<br />
+<br />
+
+<v-clicks>
+
+```html
+<p>Le concert commence à 
+  <time datetime="2025-11-14T20:00:00+01:00">20h00</time>
+</p>
+```
+
+</v-clicks>
 
 ---
 layout: thank_you
